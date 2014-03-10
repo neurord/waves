@@ -1,0 +1,78 @@
+IGOR
+X NewPath /O/M="Select Data File Folder:" W091312_4ivcurve_Path "C:\\HEKA\\091312-4ivcurves_Waves\\"
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_1_2p1.ibw"
+X Rename W091_1_1_1_2p1, W091312_4ivcurve_1_1_1_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_1_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_1_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_2_2p1.ibw"
+X Rename W091_1_1_2_2p1, W091312_4ivcurve_1_1_2_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_2_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_2_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_3_2p1.ibw"
+X Rename W091_1_1_3_2p1, W091312_4ivcurve_1_1_3_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_3_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_3_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_4_2p1.ibw"
+X Rename W091_1_1_4_2p1, W091312_4ivcurve_1_1_4_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_4_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_4_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_5_2p1.ibw"
+X Rename W091_1_1_5_2p1, W091312_4ivcurve_1_1_5_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_5_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_5_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_6_2p1.ibw"
+X Rename W091_1_1_6_2p1, W091312_4ivcurve_1_1_6_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_6_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_6_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_7_2p1.ibw"
+X Rename W091_1_1_7_2p1, W091312_4ivcurve_1_1_7_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_7_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_7_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_8_2p1.ibw"
+X Rename W091_1_1_8_2p1, W091312_4ivcurve_1_1_8_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_8_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_8_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_9_2p1.ibw"
+X Rename W091_1_1_9_2p1, W091312_4ivcurve_1_1_9_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_9_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_9_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_10_2p1.ibw"
+X Rename W091_1_1_10_2p1, W091312_4ivcurve_1_1_10_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_10_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_10_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_11_2p1.ibw"
+X Rename W091_1_1_11_2p1, W091312_4ivcurve_1_1_11_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_11_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_11_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_12_2p1.ibw"
+X Rename W091_1_1_12_2p1, W091312_4ivcurve_1_1_12_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_12_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_12_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_13_2p1.ibw"
+X Rename W091_1_1_13_2p1, W091312_4ivcurve_1_1_13_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_13_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_13_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_14_2p1.ibw"
+X Rename W091_1_1_14_2p1, W091312_4ivcurve_1_1_14_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_14_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_14_2p1
+
+X LoadWave/O/H/P=W091312_4ivcurve_Path "W091312_4ivcurve_1_1_15_2p1.ibw"
+X Rename W091_1_1_15_2p1, W091312_4ivcurve_1_1_15_2p1
+X SetScale/P x, 0.000000000E+00,  1.000000000E-04,"s", W091312_4ivcurve_1_1_15_2p1
+X SetScale y,0,0,"V", W091312_4ivcurve_1_1_15_2p1
+
