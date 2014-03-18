@@ -1,0 +1,124 @@
+IGOR
+X NewPath /O/M="Select Data File Folder:" W050411_7ivifcur_Path "C:\\HEKA\\050411-7ivifcurves_Waves\\"
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_1_2.ibw"
+X Rename W050_1_1_1_2, W050411_7ivifcur_1_1_1_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_1_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_1_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_2_2.ibw"
+X Rename W050_1_1_2_2, W050411_7ivifcur_1_1_2_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_2_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_2_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_3_2.ibw"
+X Rename W050_1_1_3_2, W050411_7ivifcur_1_1_3_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_3_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_3_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_4_2.ibw"
+X Rename W050_1_1_4_2, W050411_7ivifcur_1_1_4_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_4_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_4_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_5_2.ibw"
+X Rename W050_1_1_5_2, W050411_7ivifcur_1_1_5_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_5_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_5_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_6_2.ibw"
+X Rename W050_1_1_6_2, W050411_7ivifcur_1_1_6_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_6_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_6_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_7_2.ibw"
+X Rename W050_1_1_7_2, W050411_7ivifcur_1_1_7_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_7_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_7_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_8_2.ibw"
+X Rename W050_1_1_8_2, W050411_7ivifcur_1_1_8_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_8_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_8_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_9_2.ibw"
+X Rename W050_1_1_9_2, W050411_7ivifcur_1_1_9_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_9_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_9_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_10_2.ibw"
+X Rename W050_1_1_10_2, W050411_7ivifcur_1_1_10_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_10_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_10_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_11_2.ibw"
+X Rename W050_1_1_11_2, W050411_7ivifcur_1_1_11_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_11_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_11_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_12_2.ibw"
+X Rename W050_1_1_12_2, W050411_7ivifcur_1_1_12_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_12_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_12_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_13_2.ibw"
+X Rename W050_1_1_13_2, W050411_7ivifcur_1_1_13_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_13_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_13_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_14_2.ibw"
+X Rename W050_1_1_14_2, W050411_7ivifcur_1_1_14_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_14_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_14_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_1_15_2.ibw"
+X Rename W050_1_1_15_2, W050411_7ivifcur_1_1_15_2
+X SetScale/P x, 5.000000000E-05,  1.000000000E-04,"s", W050411_7ivifcur_1_1_15_2
+X SetScale y,0,0,"V", W050411_7ivifcur_1_1_15_2
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_1_1.ibw"
+X Rename W050_1_3_1_1, W050411_7ivifcur_1_3_1_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_1_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_1_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_2_1.ibw"
+X Rename W050_1_3_2_1, W050411_7ivifcur_1_3_2_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_2_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_2_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_3_1.ibw"
+X Rename W050_1_3_3_1, W050411_7ivifcur_1_3_3_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_3_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_3_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_4_1.ibw"
+X Rename W050_1_3_4_1, W050411_7ivifcur_1_3_4_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_4_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_4_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_5_1.ibw"
+X Rename W050_1_3_5_1, W050411_7ivifcur_1_3_5_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_5_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_5_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_6_1.ibw"
+X Rename W050_1_3_6_1, W050411_7ivifcur_1_3_6_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_6_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_6_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_7_1.ibw"
+X Rename W050_1_3_7_1, W050411_7ivifcur_1_3_7_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_7_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_7_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_8_1.ibw"
+X Rename W050_1_3_8_1, W050411_7ivifcur_1_3_8_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_8_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_8_1
+
+X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_9_1.ibw"
+X Rename W050_1_3_9_1, W050411_7ivifcur_1_3_9_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_9_1
+X SetScale y,0,0,"V", W050411_7ivifcur_1_3_9_1
+
+IF curve started at 300 pA, increment =20
