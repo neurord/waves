@@ -1,0 +1,48 @@
+IGOR
+X NewPath /O/M="Select Data File Folder:" W050611_5ivifcur_Path "C:\\HEKA\\050611-5ivifcurves_Waves\\"
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_1_1.ibw"
+X Rename W050_1_3_1_1, W050611_5ivifcur_1_3_1_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_1_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_1_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_2_1.ibw"
+X Rename W050_1_3_2_1, W050611_5ivifcur_1_3_2_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_2_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_2_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_3_1.ibw"
+X Rename W050_1_3_3_1, W050611_5ivifcur_1_3_3_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_3_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_3_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_4_1.ibw"
+X Rename W050_1_3_4_1, W050611_5ivifcur_1_3_4_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_4_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_4_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_5_1.ibw"
+X Rename W050_1_3_5_1, W050611_5ivifcur_1_3_5_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_5_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_5_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_6_1.ibw"
+X Rename W050_1_3_6_1, W050611_5ivifcur_1_3_6_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_6_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_6_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_7_1.ibw"
+X Rename W050_1_3_7_1, W050611_5ivifcur_1_3_7_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_7_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_7_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_8_1.ibw"
+X Rename W050_1_3_8_1, W050611_5ivifcur_1_3_8_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_8_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_8_1
+
+X LoadWave/O/H/P=W050611_5ivifcur_Path "W050611_5ivifcur_1_3_9_1.ibw"
+X Rename W050_1_3_9_1, W050611_5ivifcur_1_3_9_1
+X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050611_5ivifcur_1_3_9_1
+X SetScale y,0,0,"V", W050611_5ivifcur_1_3_9_1
+IF curve starts at 300 pA, inc=20 pA

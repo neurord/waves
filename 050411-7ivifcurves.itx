@@ -120,5 +120,5 @@ X LoadWave/O/H/P=W050411_7ivifcur_Path "W050411_7ivifcur_1_3_9_1.ibw"
 X Rename W050_1_3_9_1, W050411_7ivifcur_1_3_9_1
 X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W050411_7ivifcur_1_3_9_1
 X SetScale y,0,0,"V", W050411_7ivifcur_1_3_9_1
-
+IV curve starts at -500 pA, inc=50 pA
 IF curve started at 300 pA, increment =20

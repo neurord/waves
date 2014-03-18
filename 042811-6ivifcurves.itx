@@ -125,4 +125,5 @@ X LoadWave/O/H/P=W042811_6ivifcur_Path "W042811_6ivifcur_1_2_9_1.ibw"
 X Rename W042_1_2_9_1, W042811_6ivifcur_1_2_9_1
 X SetScale/P x, 0.000000000E+00,  5.000000000E-05,"s", W042811_6ivifcur_1_2_9_1
 X SetScale y,0,0,"V", W042811_6ivifcur_1_2_9_1
+First: IV curve starts at -500 pA, inc=50 pA
 Second: IF curve started at 200 pA, increment =20
