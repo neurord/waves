@@ -6,21 +6,28 @@ class Params(object):
     provides = ('baseline_before', 'baseline_after',
                 'steady_after', 'steady_before', 'steady_cutoff',
                 'falling_curve_window', 'rectification_window',
-                'depolarization_interval')
+                'injection_start', 'injection_end',
+                'injection_interval')
 
     baseline_before = .2
     baseline_after = 0.75
 
     steady_after = .25
-    steady_before = .6
     steady_cutoff = 80
 
     falling_curve_window = 20
     rectification_window = 11
 
+    injection_start = 0.2
+    injection_end = 0.6
+
     @property
-    def depolarization_interval(self):
-        return self.steady_before - self.steady_after
+    def injection_interval(self):
+        return self.injection_end - self.injection_start
+
+    @property
+    def steady_before(self):
+        return self.injection_end
 
 dirname = os.path.dirname(__file__)
 
