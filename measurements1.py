@@ -29,7 +29,7 @@ class Params(object):
     def steady_before(self):
         return self.injection_end
 
-dirname = os.path.dirname(__file__)
+dirname = os.path.dirname(__file__) + '/measurements1'
 
 waves042811 = Measurement(dirname + '/042811-6ivifcurves_Waves', bad_extra=('2',),
                           params=Params())
