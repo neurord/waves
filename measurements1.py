@@ -9,7 +9,8 @@ class Params(object):
                 'injection_start', 'injection_end',
                 'injection_interval')
 
-    baseline_before = .2
+    baseline_before = 0.2
+    #current injection stops at 0.6, wait a bit for it to return to steady state
     baseline_after = 0.75
 
     steady_after = .25
