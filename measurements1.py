@@ -1,7 +1,7 @@
 import os.path
 from ajustador.loader import Measurement
 
-class Params(object):
+class Params:
     requires = ()
     provides = ('baseline_before', 'baseline_after',
                 'steady_after', 'steady_before', 'steady_cutoff',
@@ -10,7 +10,7 @@ class Params(object):
                 'injection_interval')
 
     baseline_before = 0.2
-    #current injection stops at 0.6, wait a bit for it to return to steady state
+    # current injection stops at 0.6, wait a bit for it to return to steady state
     baseline_after = 0.75
 
     steady_after = .25
@@ -22,13 +22,9 @@ class Params(object):
     injection_start = 0.2
     injection_end = 0.6
 
-    @property
-    def injection_interval(self):
-        return self.injection_end - self.injection_start
+    injection_interval = injection_end - injection_start
+    steady_before = injection_end
 
-    @property
-    def steady_before(self):
-        return self.injection_end
 
 dirname = os.path.dirname(__file__) + '/measurements1'
 
