@@ -1,5 +1,5 @@
 import os.path
-from ajustador.loader import Measurement
+from ajustador.loader import IVCurveSeries
 
 class Params:
     requires = ()
@@ -25,41 +25,75 @@ class Params:
     injection_interval = injection_end - injection_start
     steady_before = injection_end
 
-
 dirname = os.path.dirname(__file__) + '/measurements1'
+params = Params()
 
-waves042811 = Measurement(dirname + '/042811-6ivifcurves_Waves', bad_extra=('2',),
-                          params=Params())
+waves042811 = IVCurveSeries(dirname + '/042811-6ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9,
+                            bad_extra = ('2',))
 waves1 = waves042811
-waves042911 = Measurement(dirname + '/042911-10ivifcurves_Waves', bad_extra=('2',),
-                          params=Params())
+
+waves042911 = IVCurveSeries(dirname + '/042911-10ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9,
+                            bad_extra = ('2',))
 waves2 = waves042911
-waves050311 = Measurement(dirname + '/050311-4ivifcurves_Waves', IF=(300e-12, 20e-12),
-                          params=Params())
+
+waves050311 = IVCurveSeries(dirname + '/050311-4ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (300e-12, 20e-12),
+                            time = .9)
 waves3 = waves050311
-waves050411 = Measurement(dirname + '/050411-7ivifcurves_Waves', IF=(300e-12, 20e-12), bad_extra=('2',),
-                          params=Params())
+waves050411 = IVCurveSeries(dirname + '/050411-7ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (300e-12, 20e-12),
+                            time = .9,
+                            bad_extra = ('2',))
 waves4 = waves050411
-waves050511 = Measurement(dirname + '/050511-3ivifcurves_Waves',
-                          params=Params())
+
+waves050511 = IVCurveSeries(dirname + '/050511-3ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9)
 waves5 = waves050511
-waves050611 = Measurement(dirname + '/050611-5ivifcurves_Waves', IF=(300e-12, 20e-12),
-                          params=Params())
+
+waves050611 = IVCurveSeries(dirname + '/050611-5ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (300e-12, 20e-12),
+                            time = .9)
 waves6 = waves050611
-waves051311 = Measurement(dirname + '/051311-9ivifcurves_Waves', IF=(100e-12, 20e-12),
-                          params=Params())
+
+waves051311 = IVCurveSeries(dirname + '/051311-9ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (100e-12, 20e-12),
+                            time = .9)
 waves7 = waves051311
-waves051411 = Measurement(dirname + '/051411-5ivifcurves_Waves',
-                          params=Params())
+
+waves051411 = IVCurveSeries(dirname + '/051411-5ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9)
 waves8 = waves051411
-waves051811 = Measurement(dirname + '/051811-13ivifcurves_Waves',
-                          params=Params())
+
+waves051811 = IVCurveSeries(dirname + '/051811-13ivifcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9)
 waves9 = waves051811
-waves090612 = Measurement(dirname + '/090612-1ivcurves_Waves', IF=(-500e-12, 50e-12),
-                          params=Params())
+
+waves090612 = IVCurveSeries(dirname + '/090612-1ivcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (500e-12, 50e-12),
+                            time = .9)
 waves10 = waves090612
-waves091312 = Measurement(dirname + '/091312-4ivcurves_Waves',
-                          params=Params())
+
+waves091312 = IVCurveSeries(dirname + '/091312-4ivcurves_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9)
 waves11 = waves091312
 
 waves = {
