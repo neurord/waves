@@ -1,6 +1,6 @@
 import pathlib
 import glob
-import pandas as pd
+from ajustador.loader import CSVSeries
 
 class Params:
     requires = ()
@@ -27,5 +27,7 @@ class Params:
 
 dirname = pathlib.Path(__file__).parent / 'gpedata-experimental'
 csvs = sorted(glob.glob('{}/*.csv'.format(dirname)))
-data = {name.split('/')[-1][:-4] : pd.read_csv(name, index_col=0)
-        for name in csvs}
+
+params = Params()
+data = [CSVSeries(name, params) for name in csvs]
+data = {series.name:series for series in data}
