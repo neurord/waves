@@ -16,9 +16,10 @@ class Params:
     injection_interval = injection_end - injection_start
 
     baseline_before = None
-    baseline_after = injection_end
+    baseline_after = injection_end + .1 # Going back to stability requires a bit of time
+                                        # Also skip the initial spike which is different.
 
-    steady_after = .250
+    steady_after = .500
     steady_cutoff = 80
     steady_before = injection_end
 
