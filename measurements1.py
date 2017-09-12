@@ -28,12 +28,14 @@ class Params:
 dirname = os.path.dirname(__file__) + '/measurements1'
 params = Params()
 
-waves042811 = IVCurveSeries(dirname + '/042811-6ivifcurves_Waves', params,
+D1waves042811 = IVCurveSeries(dirname + '/042811-6ivifcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
                             IF = (200e-12, 20e-12),
                             time = .9,
                             bad_extra = ('2',))
-waves1 = waves042811
+#042811-6: p26 Female, rheobase=320pA
+
+waves1 = D1waves042811
 
 waves042911 = IVCurveSeries(dirname + '/042911-10ivifcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
@@ -66,11 +68,13 @@ waves050611 = IVCurveSeries(dirname + '/050611-5ivifcurves_Waves', params,
                             time = .9)
 waves6 = waves050611
 
-waves051311 = IVCurveSeries(dirname + '/051311-9ivifcurves_Waves', params,
+D2waves051311 = IVCurveSeries(dirname + '/051311-9ivifcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
                             IF = (100e-12, 20e-12),
                             time = .9)
-waves7 = waves051311
+#051311-9: p20 Female, rheobase=180pA
+
+waves7 = D2waves051311
 
 waves051411 = IVCurveSeries(dirname + '/051411-5ivifcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
@@ -78,11 +82,12 @@ waves051411 = IVCurveSeries(dirname + '/051411-5ivifcurves_Waves', params,
                             time = .9)
 waves8 = waves051411
 
-waves051811 = IVCurveSeries(dirname + '/051811-13ivifcurves_Waves', params,
+D1waves051811 = IVCurveSeries(dirname + '/051811-13ivifcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
                             IF = (200e-12, 20e-12),
                             time = .9)
-waves9 = waves051811
+#051811-13: p25 Female, rheobase=340pA
+waves9 = D1waves051811
 
 waves090612 = IVCurveSeries(dirname + '/090612-1ivcurves_Waves', params,
                             IV = (-500e-12, 50e-12),
@@ -96,16 +101,36 @@ waves091312 = IVCurveSeries(dirname + '/091312-4ivcurves_Waves', params,
                             time = .9)
 waves11 = waves091312
 
+D2waves081011 = IVCurveSeries(dirname + '/081011-3_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (100e-12, 20e-12),
+                            time = .9)
+#081011-3: p23 Male, rheobase=160pA
+
+D2waves010612 = IVCurveSeries(dirname + '/010612-1_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (100e-12, 20e-12),
+                            time = .9)
+#010612-1: p28 Female, rheobase=200pA
+D2waves010612 = IVCurveSeries(dirname + '/010612-3_Waves', params,
+                            IV = (-500e-12, 50e-12),
+                            IF = (200e-12, 20e-12),
+                            time = .9)
+#010612-3: p28 Female, rheobase=320pA
+
 waves = {
-    'waves042811':waves042811,
+    'D1waves042811':D1waves042811,
     'waves042911':waves042911,
     'waves050311':waves050311,
     'waves050411':waves050411,
     'waves050511':waves050511,
     'waves050611':waves050611,
-    'waves051311':waves051311,
+    'D2waves051311':D2waves051311,
     'waves051411':waves051411,
-    'waves051811':waves051811,
+    'D1waves051811':D1waves051811,
+    'D2waves081011':D2waves081011,
     'waves090612':waves090612,
     'waves091312':waves091312,
+    'D2waves010612':D2waves010612,
+    'D1waves010612':D1waves010612
 }
