@@ -28,7 +28,7 @@ class Params:
 dirname = os.path.dirname(__file__) + '/EPmeasurements'
 params = Params()
 
-EPwaves120617 = IVCurveSeries(dirname + '/EP120617-11_Waves', params,
+EPwaves120617 = IVCurveSeries(dirname + '/ep120617-11_Waves', params,
                             IV = (-200e-12, 50e-12),
                             IF = (0e-12, 50e-12),
                             time = .7)

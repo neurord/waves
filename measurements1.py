@@ -112,7 +112,7 @@ D2waves010612 = IVCurveSeries(dirname + '/010612-1_Waves', params,
                             IF = (100e-12, 20e-12),
                             time = .9)
 #010612-1: p28 Female, rheobase=200pA
-D2waves010612 = IVCurveSeries(dirname + '/010612-3_Waves', params,
+D1waves010612 = IVCurveSeries(dirname + '/010612-3_Waves', params,
                             IV = (-500e-12, 50e-12),
                             IF = (200e-12, 20e-12),
                             time = .9)
@@ -134,3 +134,4 @@ waves = {
     'D2waves010612':D2waves010612,
     'D1waves010612':D1waves010612
 }
+#params = aju.optimize.ParamSet(('RA', 4.309,0, 100),('RM',0.722, 0, 10), ('CM',  0.015, 0, 0.100))
