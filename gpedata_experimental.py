@@ -10,8 +10,8 @@ class Params:
                 'injection_start', 'injection_end',
                 'injection_interval')
 
-    injection_start = 0.050
-    injection_end = 1.050
+    injection_start = 0.047
+    injection_end = 1.047
 
     injection_interval = injection_end - injection_start
 
