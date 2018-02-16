@@ -16,7 +16,9 @@ class Params:
 
     #measure the steady state response to current injection after this time (relative to time 0)
     steady_after = .25
-    steady_cutoff = 80
+    #exclude values exceeding steady_cutoff percentile in the calculation of steady state response
+    #this excludes the spikes and allows better estimate of response when spikes generated
+    steady_cutoff = 80 #units: percentile
 
     #number of points / time samples to use to measure the shape of falling curve
     falling_curve_window = 20
