@@ -11,17 +11,23 @@ class Params:
 
     baseline_before = 0.2
     # current injection stops at 0.6, wait a bit for it to return to steady state
+    #i.e., begin measurement of baseline response after current injection at this time
     baseline_after = 0.75
 
+    #measure the steady state response to current injection after this time (relative to time 0)
     steady_after = .25
-    steady_cutoff = 80
+    #exclude values exceeding steady_cutoff percentile in the calculation of steady state response
+    #this excludes the spikes and allows better estimate of response when spikes generated
+    steady_cutoff = 80 #units: percentile
 
+    #number of points / time samples to use to measure the shape of falling curve
     falling_curve_window = 20
     rectification_window = 11
 
     injection_start = 0.2
     injection_end = 0.6
-
+    
+    #injection_interval is synonomous with injection_width.  This is duration of current injection
     injection_interval = injection_end - injection_start
     steady_before = injection_end
 
