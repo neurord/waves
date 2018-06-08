@@ -10,16 +10,16 @@ class Params:
                 'injection_start', 'injection_end',
                 'injection_interval')
 
-    injection_start = 0.02 #Realworld experimental injection current in current clamp experiment.
-    injection_end = 0.06
+    injection_start = 0.2 # Current clamp experimental injection current start in time. measured(0 to injection_start in seconds).
+    injection_end = 0.6 # Current clamp experimental injection current end in time. measured(0 to injection_end in seconds).
 
     injection_interval = injection_end - injection_start
 
-    baseline_before = None
-    baseline_after = injection_end + .1 # Going back to stability requires a bit of time
-                                        # Also skip the initial spike which is different.
+    baseline_before = 0.2 # Resting membrane potential(RMP), measured (0 to baseline_before time in seconds).
+    baseline_after = injection_end + .1 # Membrane potential revert back to RMP after injection_end (time in seconds).
 
-    steady_after = .500
+    steady_after = .400 # Time interval to wait before measuring steady state depolarization
+                        # After injection current. measured(0 to steady_after in seconds).
     steady_cutoff = 80
     steady_before = injection_end
 
