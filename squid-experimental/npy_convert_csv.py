@@ -14,5 +14,5 @@ def convert_sim_data_to_csv(data_file, output_file, time_units='S', current_unit
     data_frame = pd.DataFrame(data).drop('key', axis=1)
     data_frame.to_csv(output_file, index=False)
 
-convert_sim_data_to_csv(data_file = "squid_vm1.npy", output_file = "squid_experimental.csv")
+convert_sim_data_to_csv(data_file = "squid_trace.npy", output_file = "squid_experimental.csv")
 
