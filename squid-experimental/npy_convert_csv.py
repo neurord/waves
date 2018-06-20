@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from collections import OrderedDict
 
-def convert_sim_data_to_csv(data_file, output_file, time_units='ms', current_units='A'):
+def convert_sim_data_to_csv(data_file, output_file, time_units='S', current_units='A'):
     ''' Created a csv file from the simulated data file generated from adjustador.basic_simulation.py when
         --save-vm argument is set in command line mode.
     '''
