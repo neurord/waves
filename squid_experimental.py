@@ -30,5 +30,5 @@ dirname = pathlib.Path(__file__).parent / 'squid-experimental'
 csvs = sorted(glob.glob('{}/*.csv'.format(dirname)))
 
 params = Params()
-data = [CSVSeries(name, params) for name in csvs]
+data = [CSVSeries(name, params, voltage_units='V') for name in csvs]
 data = {series.name:series for series in data}
