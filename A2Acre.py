@@ -35,6 +35,10 @@ dirname = os.path.dirname(__file__) + '/A2Acredata'
 
 params = Params()
 
+#data collected from striatal spiny projection neurons of mouse from D2-Cre crossed with Ai32.  
+#A2A2-Cre expressing mice have ChR2 expressed in the D2 (indirect pathway) SPNs
+#Thus, light responseive (LR) neurons are D2, and non-light responsive neurons (non) are D1 containing
+
 non05Jan2015_SLH004 = IVCurveSeries(dirname + '/05Jan2015_SLH004_non_Waves', params,
                             IV = (-450e-12, 50e-12, 3),
                             IF = (40e-12, 20e-12, 4),
