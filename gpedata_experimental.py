@@ -31,4 +31,4 @@ csvs = sorted(glob.glob('{}/*.csv'.format(dirname)))
 
 params = Params()
 data = [CSVSeries(name, params) for name in csvs]
-data = {series.name:series for series in data}
+alldata = {series.name:series for series in data}
