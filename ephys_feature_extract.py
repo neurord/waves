@@ -56,13 +56,18 @@ for ntype in nstats.keys():
             plot(info[ntype]['trace_inj'], nstats[ntype][nstat]['adjdata'], nstat, n_list[ntype], nstats[ntype][nstat]['mean'], ntype)
 
 ##This provides 1 graph of all the cv's for all the parameters  vs. trace_inj for each neuron type. You should get the same amount of graphs as neuron types.            
-for nkey in nstats:
+for nkey in nstats.keys():
     plt.figure()
-    for nstat in nstats[nkey]:
+    for nstat in nstats[nkey].keys():
         if nstat != 'trace_inj' and  nstat!= 'startspikes':
             cv_plot(nstat, info[nkey]['trace_inj'],nstats[nkey][nstat],nkey)
-
-       
+CVs={ntype:[] for ntype in nstats.keys()}
+for ntype in nstats.keys():
+    for nkey in nstats[ntype].keys():
+        if nkey != 'trace_inj' and  nkey != 'startspikes':
+            print(ntype, nkey, nstats[ntype][nkey]['cv'], np.abs(np.nanmean(nstats[ntype][nkey]['cv'])))
+            CVs[ntype].append(1/np.abs(np.nanmean(nstats[ntype][nkey]['cv'])))
+    print(ntype,CVs[ntype],np.log(CVs[ntype]))
   
   
 
