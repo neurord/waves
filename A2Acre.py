@@ -247,7 +247,13 @@ LR19Jan2015_SLH005 = IVCurveSeries(dirname + '/19Jan2015_SLH005_LR_Waves', param
 
 # p27 Female
 
-alldata = {'non05Jan2015_SLH004':non05Jan2015_SLH004,
+FSI01Aug2014_SLH002 = IVCurveSeries(dirname + '/01Aug2014_SLH002_FSI_Waves', params,
+                            IV = (-450e-12, 50e-12, 3),
+                            IF = (40e-12, 20e-12, 4),
+                            time = .9)
+
+alldata = {'FSI01Aug2014_SLH002':FSI01Aug2014_SLH002,
+           'non05Jan2015_SLH004':non05Jan2015_SLH004,
            'non05Jan2015_SLH005':non05Jan2015_SLH005,
            'LR06Jan2015_SLH004':LR06Jan2015_SLH004,
            'non08Jan2015_SLH001':non08Jan2015_SLH001,
