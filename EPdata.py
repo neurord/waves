@@ -48,7 +48,7 @@ EPwaves032117 = IVCurveSeries(dirname + '/ep032117_2_Waves', params,
                               IF = (0e-12, 50e-12),
                               time = .6)
 
-waves = {
+alldata = {
     '120617':EPwaves120617,
     '051517':EPwaves051517,
     '032717':EPwaves032717,
